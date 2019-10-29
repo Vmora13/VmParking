@@ -30,7 +30,7 @@ public class Cliente {
     protected Cliente (){
     }
     
-    //Constructor para crear instancias de Cliente para guardar en la base de datos.
+    
     public Cliente(String nomCliente, String apeCliente) {    
         this.nomCliente = nomCliente;
         this.apeCliente = apeCliente;
@@ -43,7 +43,6 @@ public class Cliente {
     }
 
     @Override
-    //Método para imprimir las propiedades del cliente.
     public String toString() {
         return String.format("Cliente(identificacion: %d, nomCliente: %s, apeCliente: %s, ciudadCliente: %s, vehiculo: %s",
                 identificacion, nomCliente, apeCliente,  ciudadCliente, vehiculo);
