@@ -24,7 +24,7 @@ public class Cliente {
     private String apeCliente;
     private String ciudadCliente;
     
-    @OneToMany(cascade=CascadeType.ALL, fetch=FetchType.EAGER, mappedBy="cliente") //Crear relacion uno a mucho
+    @OneToMany(cascade=CascadeType.ALL, fetch=FetchType.EAGER, mappedBy="cliente") 
     private List<Vehiculo> vehiculo = new ArrayList<Vehiculo>();
     
     protected Cliente (){
@@ -93,11 +93,9 @@ public class Cliente {
     
     
     /*
-    public void addPedido(String fecha, float cantidad) {
-        Pedido p = new Pedido(this, fecha, cantidad);
-        pedidos.add(p);
+    
     }
-    */  //PREGUNTAR
+    */
 
     public void setIdentificacion(int i) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
